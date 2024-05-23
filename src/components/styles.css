@@ -1,0 +1,178 @@
+.toggleSwitchContainer {
+    .alignContentCenter {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .toggleSwitcherLabel {
+        .slider {
+            cursor: pointer;
+            background: #a8b7c7;
+            transition: all 400ms ease;
+            width: 36px;
+            height: 18px;
+            display: flex;
+            border-radius: 18px;
+            &::before {
+                content: "";
+                height: 14px;
+                width: 14px;
+                background: #fff;
+                transition: all 400ms ease;
+                margin: 2px 3px;
+                border-radius: 50%;
+            }
+        }
+        input:checked + .slider:before {
+            transform: translateX(16px);
+        }
+    }
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .toggle-button:hover {
+    background-color: #bbb;
+  }
+  
+  .toggle-button.active {
+    background-color: #5cb85c;
+    color: #fff;
+  }
+
+
+  table {
+    width: 100%; /* Set table width to 100% of its container */
+    border-collapse: collapse; /* Collapse table borders */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  tbody{
+   min-width: 600px;
+    height: auto;
+}
+  
+  /* Apply styles to table header cells */
+  th {
+    background-color: #f2f2f2; /* Set background color */
+    border: 1px solid #ddd; /* Add border */
+    padding: 8px; /* Add padding */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Apply styles to table data cells */
+  td {
+    border: 1px solid #ddd; /* Add border */
+    padding: 8px; /* Add padding */
+   
+  }
+  
+  /* Apply alternating background color to table rows */
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Set even row background color */
+  }
+
+  .btnAdd{
+    padding: 7px;
+    margin-left: 10px;
+    border-radius: 13px;
+    border: 1px solid grey;
+    cursor: pointer;
+    font-weight: 600;
+}
+.inputText{
+    width: 400px;
+    height: 26px;
+}
+  
+
+
+  .row {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 10px;
+    height: 30px;
+    background-color:#EFEFEF;
+    &.status{
+        border-left:1px solid grey;
+    }
+  }
+  .addTask{
+    margin: 20px;
+  }
+
+  /* Toggle Button Styles */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+  }
+  
+  .toggle-checkbox {
+    display: none;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: 0.4s;
+  }
+  
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  /* Checked (Active) State */
+  .toggle-checkbox:checked + .toggle-slider {
+    background-color: #2196F3;
+  }
+  
+  .toggle-checkbox:checked + .toggle-slider:before {
+    transform: translateX(30px);
+  }
+  .row-header{
+
+      font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #808585;
+  }
+  .header{
+    font-weight: 600;
+    font-size: 16px;
+    
+  }
+  
